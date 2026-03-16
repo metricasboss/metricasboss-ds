@@ -615,5 +615,13 @@
       ]
     }
   },
+  "theme": {
+    "cssFile": "theme/tokens.css",
+    "fonts": [
+      "Sora",
+      "Inter"
+    ],
+    "description": "Métricas Boss design tokens — brand colors (orange), grays, semantic colors, light/dark mode, Sora/Inter fonts"
+  },
   "skill": "skill/blokos-skill.md"
 }
