@@ -1,5 +1,6 @@
+@import "tailwindcss";
+
 /* Métricas Boss Design Tokens */
-/* Import this file in your globals.css: @import "./tokens.css" */
 
 @custom-variant dark (&:is(.dark *));
 
