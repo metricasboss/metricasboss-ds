@@ -1,0 +1,13 @@
+- Use HeroSection como primeiro componente de qualquer landing page
+- Use Breadcrumb no topo de páginas internas (após o header)
+- Agrupe BlogCards em grids de 3 colunas (lg), 2 colunas (md), 1 coluna (sm) usando CSS grid
+- Use CTASection entre seções de conteúdo para conversão
+- Use FAQSection perto do final da página, antes do footer
+- Use NewsletterSection como penúltima seção, antes do FAQ ou footer
+- AuthorCard e CategoryCard devem ser usados em grids de 3 ou 4 colunas
+- MaterialCard segue o mesmo layout de grid que BlogCard
+- ArticleHero é exclusivo para páginas de artigo individual — nunca use em listagens
+- Mantenha as cores do tema: laranja (#f97316) como accent, fundo escuro para badges
+- Use a fonte Sora para títulos e Inter para corpo de texto (já configuradas no projeto)
+- Todos os componentes usam Tailwind CSS — não adicione CSS inline
+- Prefira dark mode com classes dark: quando relevante

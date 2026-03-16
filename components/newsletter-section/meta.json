@@ -1,0 +1,14 @@
+{
+  "name": "NewsletterSection",
+  "description": "A newsletter subscription section with decorative blur effects, title, description, and an embedded Substack signup form.",
+  "category": "marketing",
+  "slots": [],
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "Anti Achismo Social Club",
+      "description": "Menos achismo, mais dados. Sem enrolacao toda semana na sua caixa de entrada.",
+      "substackUrl": "https://lucianfialho.substack.com"
+    }
+  ]
+}

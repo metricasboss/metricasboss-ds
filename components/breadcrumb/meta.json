@@ -1,0 +1,16 @@
+{
+  "name": "Breadcrumb",
+  "description": "A navigation breadcrumb trail showing the current page hierarchy with chevron separators.",
+  "category": "navigation",
+  "slots": [],
+  "dependencies": ["lucide-react"],
+  "examples": [
+    {
+      "items": [
+        { "label": "Home", "href": "/" },
+        { "label": "Artigos", "href": "/artigos" },
+        { "label": "Como configurar o GA4" }
+      ]
+    }
+  ]
+}

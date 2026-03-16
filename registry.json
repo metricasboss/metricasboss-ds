@@ -1,0 +1,619 @@
+{
+  "name": "metricasboss-ds",
+  "version": "1.0.0",
+  "description": "Design System do Métricas Boss — componentes reutilizáveis para páginas de analytics e web",
+  "framework": "react",
+  "components": {
+    "ArticleHero": {
+      "name": "ArticleHero",
+      "description": "A full article header with category badge, title, description, author info, read time, share dropdown, and a featured image.",
+      "category": "content",
+      "files": [
+        "components/article-hero/article-hero.tsx",
+        "components/article-hero/meta.json",
+        "components/article-hero/schema.ts"
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string",
+            "description": "Category badge label displayed above the title"
+          },
+          "title": {
+            "type": "string",
+            "description": "Article headline"
+          },
+          "description": {
+            "type": "string",
+            "description": "Article summary or subtitle"
+          },
+          "authorName": {
+            "type": "string",
+            "description": "Name of the article author"
+          },
+          "authorAvatar": {
+            "type": "string",
+            "description": "Avatar image URL of the author"
+          },
+          "authorDate": {
+            "type": "string",
+            "description": "Publication date string"
+          },
+          "readTime": {
+            "type": "string",
+            "description": "Estimated reading time, e.g. '5 min de leitura'"
+          },
+          "image": {
+            "type": "string",
+            "description": "Featured image URL displayed below the meta info"
+          }
+        },
+        "required": [
+          "category",
+          "title",
+          "description",
+          "authorName",
+          "authorAvatar",
+          "authorDate",
+          "readTime",
+          "image"
+        ],
+        "additionalProperties": false,
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "examples": [
+        {
+          "category": "Analytics",
+          "title": "Como configurar eventos personalizados no GA4",
+          "description": "Aprenda a rastrear interacoes especificas dos usuarios no seu site com eventos personalizados do Google Analytics 4.",
+          "authorName": "Lucian Fialho",
+          "authorAvatar": "https://placehold.co/48x48",
+          "authorDate": "15 Mar 2025",
+          "readTime": "12 min de leitura",
+          "image": "https://placehold.co/800x400"
+        }
+      ]
+    },
+    "AuthorCard": {
+      "name": "AuthorCard",
+      "description": "A card displaying an author's profile with avatar, name, role, bio, LinkedIn link, article count, and category tags.",
+      "category": "data-display",
+      "files": [
+        "components/author-card/author-card.tsx",
+        "components/author-card/meta.json",
+        "components/author-card/schema.ts"
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Full name of the author"
+          },
+          "slug": {
+            "type": "string",
+            "description": "URL slug for the author profile page"
+          },
+          "role": {
+            "type": "string",
+            "description": "Professional role or title of the author"
+          },
+          "bio": {
+            "type": "string",
+            "description": "Short biography text"
+          },
+          "avatarUrl": {
+            "type": "string",
+            "description": "URL of the author's avatar image"
+          },
+          "linkedinUrl": {
+            "type": "string",
+            "description": "URL to the author's LinkedIn profile"
+          },
+          "articleCount": {
+            "type": "number",
+            "description": "Number of articles written by the author"
+          },
+          "categories": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of category names the author writes about"
+          }
+        },
+        "required": [
+          "name",
+          "slug"
+        ],
+        "additionalProperties": false,
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      },
+      "dependencies": [],
+      "examples": [
+        {
+          "name": "Lucian Fialho",
+          "slug": "lucian-fialho",
+          "role": "Head de Analytics",
+          "bio": "Especialista em analytics e dados digitais com mais de 10 anos de experiencia no mercado.",
+          "avatarUrl": "https://placehold.co/88x88",
+          "linkedinUrl": "https://linkedin.com/in/lucianfialho",
+          "articleCount": 15,
+          "categories": [
+            "Analytics",
+            "GA4",
+            "Data Visualization"
+          ]
+        }
+      ]
+    },
+    "BlogCard": {
+      "name": "BlogCard",
+      "description": "A card component for displaying blog post previews with cover image, category badge, title, description, author info, and read time.",
+      "category": "content",
+      "files": [
+        "components/blog-card/blog-card.tsx",
+        "components/blog-card/meta.json",
+        "components/blog-card/schema.ts"
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {
+          "slug": {
+            "type": "string",
+            "description": "URL slug for the blog post"
+          },
+          "image": {
+            "type": "string",
+            "description": "Cover image URL for the blog post"
+          },
+          "category": {
+            "type": "string",
+            "description": "Category label displayed as a badge on the image"
+          },
+          "title": {
+            "type": "string",
+            "description": "Blog post title"
+          },
+          "description": {
+            "type": "string",
+            "description": "Short excerpt or description of the blog post"
+          },
+          "authorName": {
+            "type": "string",
+            "description": "Name of the blog post author"
+          },
+          "authorAvatar": {
+            "type": "string",
+            "description": "Avatar image URL of the author"
+          },
+          "readTime": {
+            "type": "string",
+            "description": "Estimated reading time, e.g. '5 min de leitura'"
+          }
+        },
+        "required": [
+          "slug",
+          "image",
+          "category",
+          "title",
+          "description",
+          "authorName",
+          "authorAvatar",
+          "readTime"
+        ],
+        "additionalProperties": false,
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "examples": [
+        {
+          "slug": "como-configurar-ga4",
+          "image": "https://placehold.co/400x235",
+          "category": "Analytics",
+          "title": "Como configurar o GA4 do zero em 2025",
+          "description": "Um guia completo para configurar o Google Analytics 4 e comecar a coletar dados de forma confiavel.",
+          "authorName": "Lucian Fialho",
+          "authorAvatar": "https://placehold.co/32x32",
+          "readTime": "8 min de leitura"
+        }
+      ]
+    },
+    "Breadcrumb": {
+      "name": "Breadcrumb",
+      "description": "A navigation breadcrumb trail showing the current page hierarchy with chevron separators.",
+      "category": "navigation",
+      "files": [
+        "components/breadcrumb/breadcrumb.tsx",
+        "components/breadcrumb/meta.json",
+        "components/breadcrumb/schema.ts"
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "description": "Display text for the breadcrumb item"
+          },
+          "href": {
+            "type": "string",
+            "description": "URL link for the breadcrumb item. If omitted, renders as plain text (current page)."
+          }
+        },
+        "required": [
+          "label"
+        ],
+        "additionalProperties": false,
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "examples": [
+        {
+          "items": [
+            {
+              "label": "Home",
+              "href": "/"
+            },
+            {
+              "label": "Artigos",
+              "href": "/artigos"
+            },
+            {
+              "label": "Como configurar o GA4"
+            }
+          ]
+        }
+      ]
+    },
+    "CategoryCard": {
+      "name": "CategoryCard",
+      "description": "A card displaying a content category with an icon, name, description, and article/author count stats.",
+      "category": "data-display",
+      "files": [
+        "components/category-card/category-card.tsx",
+        "components/category-card/meta.json",
+        "components/category-card/schema.ts"
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Category display name"
+          },
+          "slug": {
+            "type": "string",
+            "description": "URL slug for the category page"
+          },
+          "description": {
+            "type": "string",
+            "description": "Short description of the category"
+          },
+          "articleCount": {
+            "type": "number",
+            "description": "Number of articles in this category"
+          },
+          "authorCount": {
+            "type": "number",
+            "description": "Number of authors writing in this category"
+          }
+        },
+        "required": [
+          "name",
+          "slug",
+          "articleCount",
+          "authorCount"
+        ],
+        "additionalProperties": false,
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      },
+      "dependencies": [],
+      "examples": [
+        {
+          "name": "Analytics",
+          "slug": "analytics",
+          "description": "Tudo sobre Google Analytics, metricas e analise de dados para o seu negocio digital.",
+          "articleCount": 24,
+          "authorCount": 5
+        }
+      ]
+    },
+    "CtaSection": {
+      "name": "CtaSection",
+      "description": "A call-to-action section with title, description, and primary/secondary action buttons. Supports default and card variants.",
+      "category": "marketing",
+      "files": [
+        "components/cta-section/cta-section.tsx",
+        "components/cta-section/meta.json",
+        "components/cta-section/schema.ts"
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Main heading for the CTA section"
+          },
+          "description": {
+            "type": "string",
+            "description": "Supporting text below the title"
+          },
+          "primaryAction": {
+            "type": "string",
+            "description": "Label for the primary action button"
+          },
+          "primaryHref": {
+            "type": "string",
+            "description": "URL for the primary action button"
+          },
+          "secondaryAction": {
+            "type": "string",
+            "description": "Label for the secondary action button"
+          },
+          "secondaryHref": {
+            "type": "string",
+            "description": "URL for the secondary action button"
+          },
+          "variant": {
+            "type": "string",
+            "enum": [
+              "default",
+              "card"
+            ],
+            "description": "Visual variant: 'default' renders inline, 'card' wraps in a bordered card"
+          }
+        },
+        "required": [
+          "title",
+          "primaryAction",
+          "primaryHref"
+        ],
+        "additionalProperties": false,
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      },
+      "dependencies": [],
+      "examples": [
+        {
+          "title": "Pronto para transformar seus dados em decisoes?",
+          "description": "Agende uma consultoria gratuita e descubra como podemos ajudar o seu negocio.",
+          "primaryAction": "Agendar consultoria",
+          "primaryHref": "https://example.com/agendar",
+          "secondaryAction": "Saiba mais",
+          "secondaryHref": "/sobre",
+          "variant": "default"
+        },
+        {
+          "title": "Baixe nosso guia gratuito",
+          "description": "O guia completo de GA4 para iniciantes.",
+          "primaryAction": "Baixar agora",
+          "primaryHref": "https://example.com/download",
+          "variant": "card"
+        }
+      ]
+    },
+    "FaqSection": {
+      "name": "FaqSection",
+      "description": "A frequently asked questions section with a title and a list of question/answer pairs separated by dividers.",
+      "category": "content",
+      "files": [
+        "components/faq-section/faq-section.tsx",
+        "components/faq-section/meta.json",
+        "components/faq-section/schema.ts"
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {
+          "question": {
+            "type": "string",
+            "description": "The FAQ question text"
+          },
+          "answer": {
+            "type": "string",
+            "description": "The FAQ answer text"
+          }
+        },
+        "required": [
+          "question",
+          "answer"
+        ],
+        "additionalProperties": false,
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      },
+      "dependencies": [],
+      "examples": [
+        {
+          "title": "Perguntas frequentes",
+          "items": [
+            {
+              "question": "Esse servico funciona apenas para site?",
+              "answer": "Nao, nos trabalhamos tanto com sites quanto com aplicativos. Na consultoria, tambem prestamos analise para canais do YouTube e a criacao de dashboards de visualizacoes de dados."
+            },
+            {
+              "question": "Ele serve apenas para ecommerce?",
+              "answer": "Nao. Se voce tem uma marca no digital, voce tem metricas para analisar. Os nossos analistas adaptam os seus insights de acordo com o negocio dos clientes."
+            },
+            {
+              "question": "Posso contratar apenas a consultoria?",
+              "answer": "A consultoria requer que a auditoria seja feita previamente. Isso garante que os dados analisados sejam confiaveis."
+            }
+          ]
+        }
+      ]
+    },
+    "HeroSection": {
+      "name": "HeroSection",
+      "description": "A full-width hero section with headline, description, call-to-action button, and an optional image. Supports location/date badges above the title.",
+      "category": "marketing",
+      "files": [
+        "components/hero-section/hero-section.tsx",
+        "components/hero-section/meta.json",
+        "components/hero-section/schema.ts"
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "The main headline text for the hero section"
+          },
+          "description": {
+            "type": "string",
+            "description": "Supporting description text below the title"
+          },
+          "ctaText": {
+            "type": "string",
+            "description": "Label for the call-to-action button"
+          },
+          "ctaLink": {
+            "type": "string",
+            "description": "URL the call-to-action button links to"
+          },
+          "imageUrl": {
+            "type": "string",
+            "description": "URL for the hero image displayed on the right"
+          },
+          "imageAlt": {
+            "type": "string",
+            "description": "Alt text for the hero image"
+          },
+          "locals": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Array of location/date strings displayed above the title"
+          }
+        },
+        "required": [
+          "title",
+          "description",
+          "ctaText",
+          "ctaLink"
+        ],
+        "additionalProperties": false,
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      },
+      "dependencies": [],
+      "examples": [
+        {
+          "title": "Analytics Summit 2025",
+          "description": "O maior evento de analytics do Brasil. Aprenda com os melhores profissionais do mercado.",
+          "ctaText": "Garanta seu ingresso",
+          "ctaLink": "https://example.com/ingresso",
+          "imageUrl": "https://placehold.co/528x396",
+          "imageAlt": "Analytics Summit 2025",
+          "locals": [
+            "25 de Maio",
+            "Sao Paulo, SP"
+          ]
+        }
+      ]
+    },
+    "MaterialCard": {
+      "name": "MaterialCard",
+      "description": "A card for displaying downloadable materials with cover image, category badge, title, description, and an external link action.",
+      "category": "content",
+      "files": [
+        "components/material-card/material-card.tsx",
+        "components/material-card/meta.json",
+        "components/material-card/schema.ts"
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Title of the downloadable material"
+          },
+          "description": {
+            "type": "string",
+            "description": "Short description of the material"
+          },
+          "image": {
+            "type": "string",
+            "description": "Cover image URL for the material"
+          },
+          "category": {
+            "type": "string",
+            "description": "Category label displayed as a badge on the image"
+          },
+          "downloadUrl": {
+            "type": "string",
+            "description": "External URL where the material can be downloaded"
+          }
+        },
+        "required": [
+          "title",
+          "description",
+          "image",
+          "category",
+          "downloadUrl"
+        ],
+        "additionalProperties": false,
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "examples": [
+        {
+          "title": "Guia Completo de GA4",
+          "description": "Um guia passo a passo para configurar e utilizar o Google Analytics 4 no seu site ou aplicativo.",
+          "image": "https://placehold.co/400x235",
+          "category": "Ebook",
+          "downloadUrl": "https://example.com/download/guia-ga4"
+        }
+      ]
+    },
+    "NewsletterSection": {
+      "name": "NewsletterSection",
+      "description": "A newsletter subscription section with decorative blur effects, title, description, and an embedded Substack signup form.",
+      "category": "marketing",
+      "files": [
+        "components/newsletter-section/meta.json",
+        "components/newsletter-section/newsletter-section.tsx",
+        "components/newsletter-section/schema.ts"
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "default": "Anti Achismo Social Club",
+            "description": "Heading text for the newsletter section"
+          },
+          "description": {
+            "type": "string",
+            "description": "Description text below the title"
+          },
+          "substackUrl": {
+            "type": "string",
+            "description": "Base Substack URL for the embed iframe, e.g. 'https://lucianfialho.substack.com'"
+          }
+        },
+        "required": [
+          "substackUrl"
+        ],
+        "additionalProperties": false,
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      },
+      "dependencies": [],
+      "examples": [
+        {
+          "title": "Anti Achismo Social Club",
+          "description": "Menos achismo, mais dados. Sem enrolacao toda semana na sua caixa de entrada.",
+          "substackUrl": "https://lucianfialho.substack.com"
+        }
+      ]
+    }
+  },
+  "skill": "skill/blokos-skill.md"
+}

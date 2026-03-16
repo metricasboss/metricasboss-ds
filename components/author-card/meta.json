@@ -1,0 +1,19 @@
+{
+  "name": "AuthorCard",
+  "description": "A card displaying an author's profile with avatar, name, role, bio, LinkedIn link, article count, and category tags.",
+  "category": "data-display",
+  "slots": [],
+  "dependencies": [],
+  "examples": [
+    {
+      "name": "Lucian Fialho",
+      "slug": "lucian-fialho",
+      "role": "Head de Analytics",
+      "bio": "Especialista em analytics e dados digitais com mais de 10 anos de experiencia no mercado.",
+      "avatarUrl": "https://placehold.co/88x88",
+      "linkedinUrl": "https://linkedin.com/in/lucianfialho",
+      "articleCount": 15,
+      "categories": ["Analytics", "GA4", "Data Visualization"]
+    }
+  ]
+}

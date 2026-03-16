@@ -1,0 +1,19 @@
+{
+  "name": "BlogCard",
+  "description": "A card component for displaying blog post previews with cover image, category badge, title, description, author info, and read time.",
+  "category": "content",
+  "slots": [],
+  "dependencies": ["lucide-react"],
+  "examples": [
+    {
+      "slug": "como-configurar-ga4",
+      "image": "https://placehold.co/400x235",
+      "category": "Analytics",
+      "title": "Como configurar o GA4 do zero em 2025",
+      "description": "Um guia completo para configurar o Google Analytics 4 e comecar a coletar dados de forma confiavel.",
+      "authorName": "Lucian Fialho",
+      "authorAvatar": "https://placehold.co/32x32",
+      "readTime": "8 min de leitura"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "MaterialCard",
+  "description": "A card for displaying downloadable materials with cover image, category badge, title, description, and an external link action.",
+  "category": "content",
+  "slots": [],
+  "dependencies": ["lucide-react"],
+  "examples": [
+    {
+      "title": "Guia Completo de GA4",
+      "description": "Um guia passo a passo para configurar e utilizar o Google Analytics 4 no seu site ou aplicativo.",
+      "image": "https://placehold.co/400x235",
+      "category": "Ebook",
+      "downloadUrl": "https://example.com/download/guia-ga4"
+    }
+  ]
+}

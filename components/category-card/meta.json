@@ -1,0 +1,16 @@
+{
+  "name": "CategoryCard",
+  "description": "A card displaying a content category with an icon, name, description, and article/author count stats.",
+  "category": "data-display",
+  "slots": [],
+  "dependencies": [],
+  "examples": [
+    {
+      "name": "Analytics",
+      "slug": "analytics",
+      "description": "Tudo sobre Google Analytics, metricas e analise de dados para o seu negocio digital.",
+      "articleCount": 24,
+      "authorCount": 5
+    }
+  ]
+}

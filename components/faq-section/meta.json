@@ -1,0 +1,26 @@
+{
+  "name": "FaqSection",
+  "description": "A frequently asked questions section with a title and a list of question/answer pairs separated by dividers.",
+  "category": "content",
+  "slots": [],
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "Perguntas frequentes",
+      "items": [
+        {
+          "question": "Esse servico funciona apenas para site?",
+          "answer": "Nao, nos trabalhamos tanto com sites quanto com aplicativos. Na consultoria, tambem prestamos analise para canais do YouTube e a criacao de dashboards de visualizacoes de dados."
+        },
+        {
+          "question": "Ele serve apenas para ecommerce?",
+          "answer": "Nao. Se voce tem uma marca no digital, voce tem metricas para analisar. Os nossos analistas adaptam os seus insights de acordo com o negocio dos clientes."
+        },
+        {
+          "question": "Posso contratar apenas a consultoria?",
+          "answer": "A consultoria requer que a auditoria seja feita previamente. Isso garante que os dados analisados sejam confiaveis."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "CtaSection",
+  "description": "A call-to-action section with title, description, and primary/secondary action buttons. Supports default and card variants.",
+  "category": "marketing",
+  "slots": [],
+  "dependencies": [],
+  "examples": [
+    {
+      "title": "Pronto para transformar seus dados em decisoes?",
+      "description": "Agende uma consultoria gratuita e descubra como podemos ajudar o seu negocio.",
+      "primaryAction": "Agendar consultoria",
+      "primaryHref": "https://example.com/agendar",
+      "secondaryAction": "Saiba mais",
+      "secondaryHref": "/sobre",
+      "variant": "default"
+    },
+    {
+      "title": "Baixe nosso guia gratuito",
+      "description": "O guia completo de GA4 para iniciantes.",
+      "primaryAction": "Baixar agora",
+      "primaryHref": "https://example.com/download",
+      "variant": "card"
+    }
+  ]
+}

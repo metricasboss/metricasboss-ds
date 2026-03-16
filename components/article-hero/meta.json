@@ -1,0 +1,19 @@
+{
+  "name": "ArticleHero",
+  "description": "A full article header with category badge, title, description, author info, read time, share dropdown, and a featured image.",
+  "category": "content",
+  "slots": [],
+  "dependencies": ["lucide-react"],
+  "examples": [
+    {
+      "category": "Analytics",
+      "title": "Como configurar eventos personalizados no GA4",
+      "description": "Aprenda a rastrear interacoes especificas dos usuarios no seu site com eventos personalizados do Google Analytics 4.",
+      "authorName": "Lucian Fialho",
+      "authorAvatar": "https://placehold.co/48x48",
+      "authorDate": "15 Mar 2025",
+      "readTime": "12 min de leitura",
+      "image": "https://placehold.co/800x400"
+    }
+  ]
+}
