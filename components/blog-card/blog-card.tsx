@@ -12,10 +12,10 @@ export function BlogCard({
   readTime,
 }: BlogCardProps) {
   return (
-    <a href={`/artigos/${slug}`}>
+    <a href={`/artigos/${slug}`} aria-label={`Leia mais sobre: ${title}`}>
       <article className="bg-[var(--bg-secondary)] border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-colors group cursor-pointer">
         {/* Image with Category Tag */}
-        <div className="relative h-[235px] bg-[var(--bg-tertiary)] overflow-hidden">
+        <div className="relative aspect-video bg-[var(--bg-tertiary)] overflow-hidden">
           <img
             src={image}
             alt={title}
@@ -31,12 +31,12 @@ export function BlogCard({
         {/* Content */}
         <div className="p-6 space-y-4">
           {/* Title */}
-          <h3 className="text-[22px] font-bold leading-[28.6px] text-foreground line-clamp-2">
+          <h3 className="text-xl font-bold leading-[28.6px] text-foreground line-clamp-2">
             {title}
           </h3>
 
           {/* Description */}
-          <p className="text-[var(--text-secondary)] text-[15px] leading-[24px] line-clamp-3">
+          <p className="text-[var(--text-secondary)] text-sm leading-[24px] line-clamp-3">
             {description}
           </p>
 
@@ -54,20 +54,20 @@ export function BlogCard({
                 />
               </div>
               <div>
-                <p className="text-[var(--text-secondary)] text-[13px] leading-[19.5px]">
+                <p className="text-[var(--text-secondary)] text-xs leading-[19.5px]">
                   {authorName}
                 </p>
               </div>
             </div>
-            <span className="text-[var(--text-quaternary)] text-[12px] leading-[18px]">
+            <span className="text-[var(--text-quaternary)] text-xs leading-[18px]">
               {readTime}
             </span>
           </div>
 
           {/* Read More Button */}
-          <div className="flex items-center gap-2 text-primary text-[15px] font-medium leading-[22.5px] group-hover:gap-3 transition-all">
+          <div className="flex items-center gap-2 text-primary text-sm font-medium leading-[22.5px] group-hover:gap-3 transition-all">
             Leia mais
-            <ArrowRight className="w-4 h-4" />
+            <ArrowRight className="w-4 h-4" aria-hidden="true" />
           </div>
         </div>
       </article>

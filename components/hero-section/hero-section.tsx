@@ -12,8 +12,8 @@ export function HeroSection({
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-background to-muted/20">
       {/* Decorative blurs */}
-      <div className="absolute right-32 top-20 size-32 rounded-full bg-primary/10 blur-3xl" />
-      <div className="absolute left-10 bottom-20 size-40 rounded-full bg-primary/5 blur-3xl" />
+      <div className="absolute right-32 top-20 size-32 rounded-full bg-primary/10 blur-3xl" aria-hidden="true" />
+      <div className="absolute left-10 bottom-20 size-40 rounded-full bg-primary/5 blur-3xl" aria-hidden="true" />
 
       <div className="container mx-auto max-w-7xl px-4 lg:px-8 py-20 lg:py-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -40,7 +40,8 @@ export function HeroSection({
                 href={ctaLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-primary hover:bg-primary-hover text-white font-bold text-[18px] leading-[27px] px-[31px] py-[18px] rounded-[30px] transition-colors"
+                className="bg-primary hover:bg-primary-hover text-white font-bold text-lg leading-[27px] px-8 py-4 rounded-full transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2"
+                aria-label={`${ctaText} (abre em nova aba)`}
               >
                 {ctaText}
               </a>

@@ -25,14 +25,14 @@ export function CtaSection({
       <div className="flex flex-col sm:flex-row gap-4">
         <a
           href={primaryHref}
-          className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow hover:bg-primary/90 transition-colors"
+          className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-sm font-medium text-primary-foreground shadow hover:bg-primary/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2"
         >
           {primaryAction}
         </a>
         {secondaryAction && secondaryHref && (
           <a
             href={secondaryHref}
-            className="inline-flex items-center justify-center rounded-md border border-input bg-background px-6 py-3 text-sm font-medium shadow-sm hover:bg-accent hover:text-accent-foreground transition-colors"
+            className="inline-flex items-center justify-center rounded-md border border-input bg-background px-6 py-3 text-sm font-medium shadow-sm hover:bg-accent hover:text-accent-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2"
           >
             {secondaryAction}
           </a>
@@ -49,5 +49,5 @@ export function CtaSection({
     )
   }
 
-  return <div>{content}</div>
+  return <section>{content}</section>
 }

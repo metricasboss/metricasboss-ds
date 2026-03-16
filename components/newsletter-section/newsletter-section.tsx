@@ -4,15 +4,15 @@ import type { NewsletterSectionProps } from "./schema"
 
 export function NewsletterSection({
   title = "Anti Achismo Social Club",
-  description = "Menos achismo, mais dados. Sem enrolacao toda semana na sua caixa de entrada.",
+  description = "Menos achismo, mais dados. Sem enrolação toda semana na sua caixa de entrada.",
   substackUrl,
 }: NewsletterSectionProps) {
   return (
     <section className="relative py-24 bg-gradient-to-b from-background via-[var(--bg-secondary)] to-background border-t border-b border-border overflow-hidden">
       {/* Blur Effects */}
-      <div className="absolute inset-0 opacity-5 pointer-events-none">
-        <div className="absolute top-0 left-0 w-[288px] h-[288px] bg-[#f47340] rounded-full blur-[64px]" />
-        <div className="absolute top-64 right-0 w-[384px] h-[384px] bg-[#f47340] rounded-full blur-[64px]" />
+      <div className="absolute inset-0 opacity-5 pointer-events-none" aria-hidden="true">
+        <div className="absolute top-0 left-0 w-[288px] h-[288px] bg-orange-500 rounded-full blur-[64px]" />
+        <div className="absolute top-64 right-0 w-[384px] h-[384px] bg-orange-500 rounded-full blur-[64px]" />
       </div>
 
       <div className="container mx-auto max-w-3xl px-4 lg:px-8 relative z-10">
@@ -35,9 +35,8 @@ export function NewsletterSection({
               src={`${substackUrl}/embed`}
               width="100%"
               height="150"
-              frameBorder="0"
               scrolling="no"
-              className="rounded-[14px] bg-transparent"
+              className="rounded-[14px] bg-transparent border-0"
               title="Assinar newsletter"
             />
           </div>
