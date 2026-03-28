@@ -186,6 +186,38 @@ A full-width hero section with headline, description, call-to-action button, and
 
 ---
 
+### Icon
+
+Wrapper around HugeIcons React — gives access to 4000+ icons with stroke, duotone, solid and bulk styles. Import icon data from @hugeicons/core-free-icons (free) or @hugeicons/pro (paid) and pass it to the icon prop. Supports size, strokeWidth, primaryColor, secondaryColor and all standard SVG props.
+
+**Category:** media
+
+**Props:**
+
+| Prop | Type | Required | Description |
+|------|------|----------|-------------|
+| size | number | No | Icon size in pixels (default: 24) |
+| strokeWidth | number | No | Stroke width (default: 1.5) |
+| primaryColor | string | No | Primary color (CSS color string) |
+| secondaryColor | string | No | Secondary color for duotone icons |
+| disableSecondaryOpacity | boolean | No | Disable opacity on secondary color |
+
+**Examples:**
+
+*Basic icon usage:*
+```tsx
+<Icon size={24} strokeWidth={1.5} />
+```
+
+*Large duotone icon with custom colors:*
+```tsx
+<Icon size={32} primaryColor="#4285F4" secondaryColor="#AECBFA" strokeWidth={2} />
+```
+
+**Dependencies:** @hugeicons/react
+
+---
+
 ### lesson-path
 
 Zigzag learning path component — displays a list of items in an alternating left/right layout connected by curved path connectors, inspired by Duolingo. Framework-agnostic: works with Next.js, Vite, or any React setup. Card content is fully customizable via renderCard render prop.

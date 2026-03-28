@@ -1,0 +1,25 @@
+{
+  "name": "Icon",
+  "description": "Wrapper around HugeIcons React — gives access to 4000+ icons with stroke, duotone, solid and bulk styles. Import icon data from @hugeicons/core-free-icons (free) or @hugeicons/pro (paid) and pass it to the icon prop. Supports size, strokeWidth, primaryColor, secondaryColor and all standard SVG props.",
+  "category": "media",
+  "slots": [],
+  "dependencies": ["@hugeicons/react"],
+  "examples": [
+    {
+      "description": "Basic icon usage",
+      "props": {
+        "size": 24,
+        "strokeWidth": 1.5
+      }
+    },
+    {
+      "description": "Large duotone icon with custom colors",
+      "props": {
+        "size": 32,
+        "primaryColor": "#4285F4",
+        "secondaryColor": "#AECBFA",
+        "strokeWidth": 2
+      }
+    }
+  ]
+}

@@ -517,6 +517,64 @@
         }
       ]
     },
+    "Icon": {
+      "name": "Icon",
+      "description": "Wrapper around HugeIcons React — gives access to 4000+ icons with stroke, duotone, solid and bulk styles. Import icon data from @hugeicons/core-free-icons (free) or @hugeicons/pro (paid) and pass it to the icon prop. Supports size, strokeWidth, primaryColor, secondaryColor and all standard SVG props.",
+      "category": "media",
+      "files": [
+        "components/huge-icon/huge-icon.tsx",
+        "components/huge-icon/meta.json",
+        "components/huge-icon/schema.ts"
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {
+          "size": {
+            "type": "number",
+            "description": "Icon size in pixels (default: 24)"
+          },
+          "strokeWidth": {
+            "type": "number",
+            "description": "Stroke width (default: 1.5)"
+          },
+          "primaryColor": {
+            "type": "string",
+            "description": "Primary color (CSS color string)"
+          },
+          "secondaryColor": {
+            "type": "string",
+            "description": "Secondary color for duotone icons"
+          },
+          "disableSecondaryOpacity": {
+            "type": "boolean",
+            "description": "Disable opacity on secondary color"
+          }
+        },
+        "additionalProperties": false,
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      },
+      "dependencies": [
+        "@hugeicons/react"
+      ],
+      "examples": [
+        {
+          "description": "Basic icon usage",
+          "props": {
+            "size": 24,
+            "strokeWidth": 1.5
+          }
+        },
+        {
+          "description": "Large duotone icon with custom colors",
+          "props": {
+            "size": 32,
+            "primaryColor": "#4285F4",
+            "secondaryColor": "#AECBFA",
+            "strokeWidth": 2
+          }
+        }
+      ]
+    },
     "lesson-path": {
       "name": "lesson-path",
       "description": "Zigzag learning path component — displays a list of items in an alternating left/right layout connected by curved path connectors, inspired by Duolingo. Framework-agnostic: works with Next.js, Vite, or any React setup. Card content is fully customizable via renderCard render prop.",
