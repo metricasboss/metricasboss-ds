@@ -387,6 +387,20 @@ Use as classes utilitárias, NUNCA valores arbitrários como py-[41px]:
 - `.shadow-card-hover` — sombra no hover
 - `.shadow-glow` — glow laranja para destaques
 
+## Ícones
+
+- Use o componente `Icon` (wrapper HugeIcons) para todos os ícones da interface
+- Importe os dados do ícone de `@hugeicons/core-free-icons` (gratuito) ou `@hugeicons/pro` (pago)
+- Tamanho padrão: `size={20}` para ícones inline, `size={24}` para ícones standalone
+- strokeWidth padrão: `1.5` — use `2` para ênfase, `1` para decorativo
+- Para descobrir ícones disponíveis, use o MCP do HugeIcons:
+  ```
+  npx @hugeicons/mcp-server
+  ```
+  Adicione ao projeto com: `claude mcp add --transport stdio hugeicons -- npx -y @hugeicons/mcp-server`
+- NUNCA use lucide-react, heroicons ou outros icon sets — use apenas HugeIcons
+- NUNCA hardcode SVGs inline quando o componente `Icon` resolve
+
 ## Dark Mode
 
 - Prefira dark mode com classe `dark` no html
