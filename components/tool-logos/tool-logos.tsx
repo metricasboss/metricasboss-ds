@@ -7,31 +7,55 @@ export interface ToolLogoProps extends SVGProps<SVGSVGElement> {
 export function GoogleAnalytics4({ size = 32, ...props }: ToolLogoProps) {
   return (
     <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 301112 333331"
       width={size}
       height={size}
-      viewBox="0 0 192 192"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+      shapeRendering="geometricPrecision"
+      textRendering="geometricPrecision"
+      imageRendering="optimizeQuality"
+      fillRule="evenodd"
+      clipRule="evenodd"
       aria-label="Google Analytics 4"
       {...props}
     >
-      <rect width="192" height="192" rx="24" fill="white" />
       <path
-        d="M108 144V68c0-6.627 5.373-12 12-12s12 5.373 12 12v76c0 6.627-5.373 12-12 12s-12-5.373-12-12z"
-        fill="#F9AB00"
+        d="M301110 291619c124 22886-18333 41521-41206 41644-1700 14-3415-82-5101-288-21227-3140-36776-21611-36256-43057V43342c-507-21474 15084-39944 36324-43057 22721-2660 43304 13602 45964 36324 192 1673 288 3346 274 5032v249977z"
+        fill="#f9ab00"
       />
       <path
-        d="M60 144v-28c0-6.627 5.373-12 12-12s12 5.373 12 12v28c0 6.627-5.373 12-12 12s-12-5.373-12-12z"
-        fill="#E37400"
+        d="M41288 250756c22804 0 41288 18484 41288 41288s-18484 41288-41288 41288S0 314848 0 292044s18484-41288 41288-41288zm108630-125126c-22913 1261-40685 20472-40150 43413v110892c0 30099 13246 48364 32649 52258 22393 4539 44209-9928 48748-32320 562-2743 836-5526 822-8323V167124c41-22886-18470-41467-41356-41507-233 0-480 0-713 14z"
+        fill="#e37400"
       />
-      <circle cx="120" cy="144" r="12" fill="#F9AB00" />
-      <path
-        d="M84 144V100c0-6.627 5.373-12 12-12s12 5.373 12 12v44"
-        fill="#E8EAED"
+    </svg>
+  )
+}
+
+export function GoogleTagManager({ size = 32, ...props }: ToolLogoProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 122.87 122.89"
+      width={size}
+      height={size}
+      aria-label="Google Tag Manager"
+      {...props}
+    >
+      <polygon
+        points="72.13 118.22 50.8 96.86 96.63 50.56 118.35 72.28 72.13 118.22 72.13 118.22"
+        fill="#8ab4f8"
       />
       <path
-        d="M84 144V100c0-6.627 5.373-12 12-12s12 5.373 12 12v44c0 6.627-5.373 12-12 12s-12-5.373-12-12z"
-        fill="#4285F4"
+        d="M72.29,26.23,50.56,4.5,4.5,50.56a15.35,15.35,0,0,0,0,21.71h0l46.06,46.06,21.31-21.4L37.07,61.45,72.29,26.23Z"
+        fill="#4285f4"
+      />
+      <path
+        d="M118.35,50.56,72.29,4.5A15.36,15.36,0,0,0,50.56,26.22L96.65,72.28a15.36,15.36,0,0,0,21.72-21.72Z"
+        fill="#8ab4f8"
+      />
+      <path
+        d="M76.48,107.66a15.23,15.23,0,1,0-15.22,15.23,15.22,15.22,0,0,0,15.22-15.23Z"
+        fill="#246fdb"
       />
     </svg>
   )
@@ -40,63 +64,22 @@ export function GoogleAnalytics4({ size = 32, ...props }: ToolLogoProps) {
 export function GoogleBigQuery({ size = 32, ...props }: ToolLogoProps) {
   return (
     <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 80 80"
       width={size}
       height={size}
-      viewBox="0 0 192 192"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+      fill="#fff"
+      fillRule="evenodd"
       aria-label="Google BigQuery"
       {...props}
     >
-      <rect width="192" height="192" rx="24" fill="white" />
-      <path
-        d="M96 24C57.34 24 26 55.34 26 94c0 38.66 31.34 70 70 70 15.07 0 29.03-4.77 40.42-12.87l19.73 19.73c3.12 3.12 8.19 3.12 11.31 0 3.12-3.12 3.12-8.19 0-11.31l-19.73-19.73C155.23 123.03 160 109.07 160 94c0-38.66-31.34-70-70-70z"
-        fill="#4285F4"
-      />
-      <path
-        d="M96 40c29.82 0 54 24.18 54 54s-24.18 54-54 54-54-24.18-54-54 24.18-54 54-54z"
-        fill="white"
-      />
-      <path
-        d="M80 76h32v8H80v-8zM80 92h32v8H80v-8zM80 108h20v8H80v-8z"
-        fill="#4285F4"
-      />
-      <path
-        d="M148 148l16 16"
-        stroke="#4285F4"
-        strokeWidth="8"
-        strokeLinecap="round"
-      />
-    </svg>
-  )
-}
-
-export function GoogleAds({ size = 32, ...props }: ToolLogoProps) {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 192 192"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-label="Google Ads"
-      {...props}
-    >
-      <rect width="192" height="192" rx="24" fill="white" />
-      <path
-        d="M32 136L80 52l24 41.57L80 136H32z"
-        fill="#FBBC04"
-      />
-      <path
-        d="M104 93.57L80 52l48-28 24 41.57L128 112 104 93.57z"
-        fill="#4285F4"
-      />
-      <path
-        d="M128 112l24-46.43L160 112l-16 24H96l32-24z"
-        fill="#34A853"
-      />
-      <circle cx="48" cy="136" r="16" fill="#FBBC04" />
-      <circle cx="144" cy="136" r="16" fill="#34A853" />
+      <g stroke="none">
+        <path d="M18.419 34.818v10.519a19.64 19.64 0 0 0 6.84 6.96V34.818z" fill="#aecbfa" />
+        <path d="M31.058 25.139v30.118a30.48 30.48 0 0 0 4.44.24c1.332.083 2.668.083 4 0V25.139z" fill="#669df6" />
+        <path d="M46.058 38.938v13.159a20 20 0 0 0 6.8-7.28v-5.88z" fill="#aecbfa" />
+        <path d="M62.457 56.777l-5.68 5.68a1.68 1.68 0 0 0 0 2.4l14.159 14.159a1.68 1.68 0 0 0 2.36 0l5.72-5.72a1.68 1.68 0 0 0 0-2.36L64.857 56.777a1.68 1.68 0 0 0-2.4 0" fill="#4285f4" />
+        <path d="M35.498-.5C15.617-.5-.5 15.617-.5 35.498s16.117 35.998 35.998 35.998 35.998-16.117 35.998-35.998S55.379-.5 35.498-.5m0 62.757C20.752 62.235 8.812 50.271 8.82 35.525S20.779 8.827 35.525 8.82s26.71 11.933 26.732 26.679a26.72 26.72 0 0 1-26.759 26.759" fill="#669df6" />
+      </g>
     </svg>
   )
 }
@@ -104,61 +87,29 @@ export function GoogleAds({ size = 32, ...props }: ToolLogoProps) {
 export function LookerStudio({ size = 32, ...props }: ToolLogoProps) {
   return (
     <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="-78.5 0 413 413"
       width={size}
       height={size}
-      viewBox="0 0 192 192"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMidYMid"
       aria-label="Looker Studio"
       {...props}
     >
-      <rect width="192" height="192" rx="24" fill="white" />
-      <circle cx="96" cy="96" r="64" fill="#4285F4" />
       <path
-        d="M96 32v64l45.25 45.25C122.87 157.47 110.02 160 96 160c-35.35 0-64-28.65-64-64s28.65-64 64-64z"
+        d="M127.128486,0 C113.797782,0.0058471726 101.556004,7.36006381 95.2905253,19.126605 C89.0250469,30.8931461 89.7564532,45.1553578 97.1927396,56.2192339 L112.606279,40.8274339 C112.096845,39.2920176 111.839876,37.6841242 111.845385,36.066411 C111.845385,27.6618072 118.658663,20.8485297 127.063267,20.8485297 C135.467871,20.8485297 142.281148,27.6618072 142.281148,36.066411 C142.281148,44.4710148 135.467871,51.2842924 127.063267,51.2842924 C125.452814,51.2878362 123.852389,51.0308872 122.323984,50.5233983 L106.932184,65.9151983 C119.749817,74.6084738 136.686605,74.1479499 149.012895,64.7709924 C161.339185,55.3940349 166.302744,39.1943452 161.345227,24.5216568 C156.387711,9.84896827 142.61604,-0.0205786569 127.128486,0 Z"
         fill="#34A853"
       />
       <path
-        d="M96 96l45.25 45.25C128.08 153.28 112.78 160 96 160V96z"
+        d="M112.780303,105.112113 C112.803794,92.9288201 108.858278,81.0693768 101.540706,71.3284161 L81.5400617,91.3073204 C87.7949796,102.747737 85.5440645,116.967804 76.0616244,125.917131 L86.9315396,152.483203 C103.037113,142.110661 112.772753,124.268811 112.780303,105.112113 Z"
         fill="#FBBC04"
       />
-      <circle cx="96" cy="96" r="24" fill="white" />
-    </svg>
-  )
-}
-
-export function GoogleTagManager({ size = 32, ...props }: ToolLogoProps) {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 192 192"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-label="Google Tag Manager"
-      {...props}
-    >
-      <rect width="192" height="192" rx="24" fill="white" />
       <path
-        d="M96 28L28 96l68 68 68-68L96 28z"
-        fill="#8AB4F8"
+        d="M56.8870939,133.786949 L56.3653379,133.786949 C44.0975407,133.788013 33.1858466,125.990585 29.2128405,114.383946 C25.2398344,102.777307 29.0843199,89.9287712 38.7794013,82.4118404 C48.4744826,74.8949096 61.8756692,74.3722813 72.126715,81.1113398 L91.9317006,61.3063543 C72.6737207,45.6936654 45.4778243,44.4893124 24.9151409,58.3385684 C4.35245741,72.1878245 -4.75374244,97.8421492 2.47549859,121.556363 C9.70473962,145.270576 31.5737,161.482171 56.3653379,161.50524 C60.1906548,161.507115 64.0066702,161.128427 67.7570091,160.374762 L56.8870939,133.786949 Z"
+        fill="#EA4335"
       />
       <path
-        d="M96 28L28 96l34 34 34-34V28z"
+        d="M127.88938,156.76595 C115.371706,156.753269 102.919887,158.577095 90.9316684,162.179168 L106.780005,200.897806 C113.678715,199.188192 120.760254,198.326726 127.86764,198.332506 C169.050784,198.344513 204.491034,227.444917 212.516351,267.838552 C220.541668,308.232187 198.917134,348.670095 160.866351,364.424121 C122.815568,380.178148 78.9350487,366.861058 56.0581359,332.616375 C33.1812232,298.371692 37.6787581,252.735993 66.8004566,223.615929 C72.8771111,217.558264 79.8143655,212.430409 87.3880761,208.398047 L71.7136583,169.788108 C13.2865745,198.402523 -14.3767247,266.297107 7.41546106,327.59645 C29.2076468,388.895793 93.5203541,424.092503 156.898395,409.404661 C220.276436,394.716818 262.550912,334.818559 255.157557,270.182291 C247.764201,205.546024 193.055814,156.741054 127.998079,156.74421 Z"
         fill="#4285F4"
-      />
-      <path
-        d="M130 130l34-34L96 28v68l34 34z"
-        fill="#4285F4"
-        opacity="0.7"
-      />
-      <rect
-        x="84"
-        y="60"
-        width="24"
-        height="72"
-        rx="12"
-        fill="white"
       />
     </svg>
   )
@@ -167,18 +118,43 @@ export function GoogleTagManager({ size = 32, ...props }: ToolLogoProps) {
 export function Mixpanel({ size = 32, ...props }: ToolLogoProps) {
   return (
     <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 49.64 47.36"
       width={size}
       height={size}
-      viewBox="0 0 192 192"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
       aria-label="Mixpanel"
       {...props}
     >
-      <rect width="192" height="192" rx="24" fill="#7856FF" />
-      <circle cx="56" cy="96" r="20" fill="white" />
-      <circle cx="96" cy="96" r="20" fill="white" opacity="0.7" />
-      <circle cx="136" cy="96" r="20" fill="white" opacity="0.4" />
+      <path
+        fill="#7856FF"
+        d="M14.41,19.54h6.31c-1.58-0.99-2.17-2.37-2.96-4.93l-2.37-8.78c-1.08-3.95-1.97-5.82-6.31-5.82H0.01v2.37H1.3
+        c2.66,0,2.96,0.99,3.75,3.95l2.07,7.7C8.2,17.77,9.89,19.54,14.41,19.54L14.41,19.54z M29.02,19.54h6.31c4.54,0,6.11-1.78,7.2-5.52
+        l2.07-7.7c0.79-2.96,1.18-3.95,3.75-3.95h1.29V0h-8.98c-4.44,0-5.33,1.78-6.32,5.82l-2.37,8.78
+        C31.19,17.26,30.59,18.55,29.02,19.54z M20.73,27.82h8.29v-8.29h-8.29V27.82z M0.01,47.36h9.07c4.34,0,5.23-1.88,6.31-5.82
+        l2.37-8.78c0.79-2.56,1.38-3.95,2.96-4.93h-6.31c-4.54,0-6.22,1.78-7.3,5.52l-2.07,7.7C4.25,44.01,3.96,45,1.29,45H0L0.01,47.36
+        L0.01,47.36z M40.65,47.36h8.98v-2.37h-1.29c-2.56,0-2.96-0.99-3.75-3.95l-2.07-7.7c-1.08-3.75-2.66-5.52-7.2-5.52h-6.3
+        c1.58,0.99,2.15,2.27,2.94,4.93l2.37,8.78C35.32,45.58,36.21,47.36,40.65,47.36L40.65,47.36z"
+      />
+    </svg>
+  )
+}
+
+// Google Ads e Amplitude — sem asset fornecido, mantidos como placeholders
+export function GoogleAds({ size = 32, ...props }: ToolLogoProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 192 192"
+      width={size}
+      height={size}
+      aria-label="Google Ads"
+      {...props}
+    >
+      <path d="M32 136L80 52l24 41.57L80 136H32z" fill="#FBBC04" />
+      <path d="M104 93.57L80 52l48-28 24 41.57L104 93.57z" fill="#4285F4" />
+      <path d="M128 65.57L152 112H96l32-46.43z" fill="#34A853" />
+      <circle cx="48" cy="136" r="16" fill="#FBBC04" />
+      <circle cx="144" cy="112" r="16" fill="#34A853" />
     </svg>
   )
 }
@@ -186,29 +162,21 @@ export function Mixpanel({ size = 32, ...props }: ToolLogoProps) {
 export function Amplitude({ size = 32, ...props }: ToolLogoProps) {
   return (
     <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 192 192"
       width={size}
       height={size}
-      viewBox="0 0 192 192"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
       aria-label="Amplitude"
       {...props}
     >
       <rect width="192" height="192" rx="24" fill="#1A1A2E" />
-      <path
-        d="M96 36L36 156h28l12-28h40l12 28h28L96 36z"
-        fill="white"
-      />
-      <path
-        d="M96 80l14 36H82l14-36z"
-        fill="#1A1A2E"
-      />
+      <path d="M96 36L36 156h28l12-28h40l12 28h28L96 36z" fill="white" />
+      <path d="M96 80l14 36H82l14-36z" fill="#1A1A2E" />
       <circle cx="152" cy="148" r="12" fill="#00B4D8" />
     </svg>
   )
 }
 
-// Convenience: all logos as a map
 export const TOOL_LOGOS = {
   ga4: GoogleAnalytics4,
   bigquery: GoogleBigQuery,
