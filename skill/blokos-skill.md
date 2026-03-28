@@ -254,6 +254,39 @@ A newsletter subscription section with decorative blur effects, title, descripti
 
 ---
 
+### ToolLogos
+
+SVG logo components for digital analytics and marketing tools: Google Analytics 4, Google BigQuery, Google Ads, Looker Studio, Google Tag Manager, Mixpanel, and Amplitude. Each logo is a standalone React component with configurable size and all standard SVG props.
+
+**Category:** media
+
+**Props:**
+
+| Prop | Type | Required | Description |
+|------|------|----------|-------------|
+| tool | "ga4" | "bigquery" | "googleAds" | "lookerStudio" | "gtm" | "mixpanel" | "amplitude" | Yes | Which tool logo to render |
+| size | number | No | Width and height in pixels (default: 32) |
+| className | string | No | CSS class applied to the SVG element |
+
+**Examples:**
+
+*Google Analytics 4 logo, 48px:*
+```tsx
+<ToolLogos tool="ga4" size={48} />
+```
+
+*All logos at default size:*
+```tsx
+<ToolLogos tool="bigquery" size={32} />
+```
+
+*Mixpanel logo large:*
+```tsx
+<ToolLogos tool="mixpanel" size={64} />
+```
+
+---
+
 ## Composition Rules
 
 ## Layout

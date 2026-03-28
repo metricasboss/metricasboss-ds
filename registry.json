@@ -716,6 +716,71 @@
           "substackUrl": "https://lucianfialho.substack.com"
         }
       ]
+    },
+    "ToolLogos": {
+      "name": "ToolLogos",
+      "description": "SVG logo components for digital analytics and marketing tools: Google Analytics 4, Google BigQuery, Google Ads, Looker Studio, Google Tag Manager, Mixpanel, and Amplitude. Each logo is a standalone React component with configurable size and all standard SVG props.",
+      "category": "media",
+      "files": [
+        "components/tool-logos/meta.json",
+        "components/tool-logos/schema.ts",
+        "components/tool-logos/tool-logos.tsx"
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {
+          "tool": {
+            "type": "string",
+            "enum": [
+              "ga4",
+              "bigquery",
+              "googleAds",
+              "lookerStudio",
+              "gtm",
+              "mixpanel",
+              "amplitude"
+            ],
+            "description": "Which tool logo to render"
+          },
+          "size": {
+            "type": "number",
+            "description": "Width and height in pixels (default: 32)"
+          },
+          "className": {
+            "type": "string",
+            "description": "CSS class applied to the SVG element"
+          }
+        },
+        "required": [
+          "tool"
+        ],
+        "additionalProperties": false,
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      },
+      "dependencies": [],
+      "examples": [
+        {
+          "description": "Google Analytics 4 logo, 48px",
+          "props": {
+            "tool": "ga4",
+            "size": 48
+          }
+        },
+        {
+          "description": "All logos at default size",
+          "props": {
+            "tool": "bigquery",
+            "size": 32
+          }
+        },
+        {
+          "description": "Mixpanel logo large",
+          "props": {
+            "tool": "mixpanel",
+            "size": 64
+          }
+        }
+      ]
     }
   },
   "theme": {
